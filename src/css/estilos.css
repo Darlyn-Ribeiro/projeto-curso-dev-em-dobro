@@ -1,0 +1,229 @@
+body{
+	font-family: 'Poppins',sans-serif;
+	max-width: 1280px;
+	height: auto;
+	margin: 0 auto;
+	background-image: url(/src/imagens/Fundolilas.jpeg); /*COR DE FUNDO DO CORPO DO SITE */
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #333333;       /*COLOR SOZINHO É PARA ESTILIZAR A COR DO TEXTO*/
+}
+
+body.modo-escuro{   /*ESTILIZAR O TEMA ESCURO*/
+	background-color: #212121;
+	color: #f5f5f5;	
+	height: auto;
+}
+                  /*MUDAR O CABECALHO DO PROJETO*/
+header{
+	display: flex;      /*ALINHAR HORIZONTALMENTE OU VERTICALMENTE OS ELEMENTOS*/
+	/* flex-direction;      EXEMPLO DE FLEX VAI FICAR UM EMBAIXO DO OUTRO*/
+	justify-content: space-between;
+	padding: 25px;   /*ESPAÇAMENTO INTERNO DESGRUDAR DAS BORDAS*/
+	background: hsla(307, 93%, 84%, 1);
+	background: linear-gradient(90deg,hsla(307,93%,84%,1) 0%,hsla(256,96%,44%,1)100%);
+	background: -moz-linear-gradient(90deg,hsla(307,93%,84%,1) 0%,hsla(256,96%,44%,1)100%);
+	background: -webkit-linear-gradient(90deg,hsla(307,93%,84%,1) 0%,hsla(256,96%,44%,1)100%);
+	filter: progid:DXImageTransform.microsoft.gradient(StartColorstr="#fcb0f3",endColorstr="#3d05dd", GradientType=1);
+	border-radius: 25px;
+	height: auto;
+	width: 100%;
+	align-items: center;
+}
+
+header .logo,                       /*ESTILIZAR APENAS MINHA CLASSE LOGO DENTRO DO MEU HEADER*/
+header .imagem-botao{                /*ESTILIZAR APENAS O BOTÃO DENTRO DO MEU HEADER*/
+	width: 30px;
+	transition: 0.2s ease-in-out;    /*TEMPO DE DURAÇÃO E EFEITO DO HOVER NOS ELEMNTOS CITADOS*/
+}
+
+header .logo-nome{
+	width: 100px;
+	transition: 0.2s ease-in-out; 
+}
+
+                    /* FORMATAR O BOTÃO */
+header #botao-alterar-tema{        /*PARA ESTILIZAR ID VOU USAR #*/
+	background: none;
+	border:none;
+}
+
+header 	.logo:hover,
+header .imagem-botao:hover,
+main .cartao-pokemon1:hover,
+main .cartao-pokemon2:hover,
+main .cartao-pokemon3:hover,
+main .cartao-pokemon4:hover{        /*PARA CRIAR UMA PSEUDOCLASSE*/
+	transform: scale(1.05);        /*PARA CRIAR UM EFEITO QUANDO PASSSAR O MOUSE*/
+	cursor: pointer;                 /*PONTEIRO DO MOUSE MUDA PARA A MAOZINHA*/
+}
+
+                     /*ESTILIZAR O CORPO DA MINHA PAGINA */
+				     /*ESTILIZAR O CORPO COMPLETO MAIN*/
+main{
+	padding: 25px;
+}
+                /*ESTILIZAR OS ELEMENTOS DENTRO DO MAIN*/
+
+main .listagem-pokemon{
+	display: flex;               /*POR PADRÃO OS ELEMENTOS FICAM UM DO LADO DO OUTRO*/
+	flex-wrap: wrap;             /*PARA QUEBRAR PRA BAIXO SEM SCROW*/
+	gap: 30px;                   /*ESPAÇAMENTO ENTRE OS CARTÕES EMCIMA E EMBAIXO*/
+	justify-content: center;     /*CENTRALIZAR MEUS ELEMENTOS*/
+}
+
+                  /*ESTILIZAR SO OS MEUS  CARTÕES*/
+main .cartao-pokemon1{
+	background-image: url(/src/imagens/fundoverde.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 70%;
+	width: 200px;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;       /*COLOCAR OS ITENS DO CARD UM ABAIXO DO OUTRO*/
+	align-items: center;          /*ALINHAR OS ITENS NO CENTRO*/
+	gap: 15px;                    /*ESPAÇAMENTO DOS ELEMENTOS DENTRO DO CARTAO EMCIMA E EMBAIXO*/
+	border-radius: 15px;          /*PARA CRIAR UMA BORDA*/  
+	transition: 0.2s ease-in-out;  
+}
+
+main .cartao-pokemon2{
+	background-image: url(/src/imagens/fundovermelho.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 70%;
+	width: 200px;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;       /*COLOCAR OS ITENS DO CARD UM ABAIXO DO OUTRO*/
+	align-items: center;          /*ALINHAR OS ITENS NO CENTRO*/
+	gap: 15px;                    /*ESPAÇAMENTO DOS ELEMENTOS DENTRO DO CARTAO EMCIMA E EMBAIXO*/
+	border-radius: 15px;          /*PARA CRIAR UMA BORDA*/  
+	transition: 0.2s ease-in-out;  
+}
+
+main .cartao-pokemon3{
+	background-image: url(/src/imagens/Fundoescuro.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 70%;
+	width: 200px;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;       /*COLOCAR OS ITENS DO CARD UM ABAIXO DO OUTRO*/
+	align-items: center;          /*ALINHAR OS ITENS NO CENTRO*/
+	gap: 15px;                    /*ESPAÇAMENTO DOS ELEMENTOS DENTRO DO CARTAO EMCIMA E EMBAIXO*/
+	border-radius: 15px;          /*PARA CRIAR UMA BORDA*/  
+	transition: 0.2s ease-in-out;  
+}
+
+main .cartao-pokemon4{
+	background-image: url(/src/imagens/fundoamarelo.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 70%;
+	width: 200px;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;       /*COLOCAR OS ITENS DO CARD UM ABAIXO DO OUTRO*/
+	align-items: center;          /*ALINHAR OS ITENS NO CENTRO*/
+	gap: 15px;                    /*ESPAÇAMENTO DOS ELEMENTOS DENTRO DO CARTAO EMCIMA E EMBAIXO*/
+	border-radius: 15px;          /*PARA CRIAR UMA BORDA*/  
+	transition: 0.2s ease-in-out;  
+}
+
+                 /*CRIAR UM HOVER PARA O CARTÃO*/
+main .cartao-pokemon1:hover{
+	background-color: #96d9d6;
+}
+
+
+                    /*PARA MUDAR A COR DO CARTAO QUANDO ESTIVER NO MODO ESCURO*/
+
+.modo-escuro .cartao-pokemon{
+	background-color: #a8a8a8;
+}
+
+                      /*ESTILIZAR A PARTE INTERNA DO CARTAO*/
+
+                        /*ESTILIZAR O BLOCO DO TITULO */
+main .cartao-pokemon1 .informacoes,
+main .cartao-pokemon2 .informacoes,
+main .cartao-pokemon3 .informacoes,
+main .cartao-pokemon4 .informacoes{
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid #333333;
+	border-radius: 10px;
+	background: hsla(307, 93%, 84%, 1);
+	background: linear-gradient(90deg,hsla(307,93%,84%,1) 0%,hsla(256,96%,44%,1)100%);
+	background: -moz-linear-gradient(90deg,hsla(307,93%,84%,1) 0%,hsla(256,96%,44%,1)100%);
+	background: -webkit-linear-gradient(90deg,hsla(307,93%,84%,1) 0%,hsla(256,96%,44%,1)100%);
+	filter: progid:DXImageTransform.microsoft.gradient(StartColorstr="#fcb0f3",endColorstr="#3d05dd", GradientType=1);
+}
+
+                   /*FORMATAR O SPAN TITULO */
+
+main .cartao-pokemon .informacoes span{  
+	background-color: #ee8130;  
+	padding: 5px;
+	text-transform: uppercase;   /*TODAS AS LETRAS  DO TITULO MAIUSCULAS*/
+	font-size: 17px;             /*TAMANHO DA FONTE*/
+}
+
+                    /*FORMATATR OS GIF*/
+
+main .cartao-pokemon .gif{
+	width: 90px;
+	height: 90px;
+}
+
+                     /*FORMATAR OS TIPOS*/
+
+main .cartao-pokemon .tipos{
+	display: flex;
+	gap: 15px;
+}
+
+main .cartao-pokemon .tipo{
+	padding: 8px;
+	border-radius: 10px;
+}
+
+.grama{
+	background-color: #7ac74c;
+}
+
+.veneno{
+	background-color: #df67ddfb;
+}
+
+.fogo{
+	background-color: #ee8130;
+}
+.agua{
+	background-color: #6390f0;
+}
+.inseto{
+	background-color: #a6b91a;
+}
+
+            /*ESTILIZAR O DESCRIÇÃO */
+
+main .descricao{
+	max-height: 80px;          /*ALTURA MAXIMA PARA O CARTAO*/
+	overflow-y: scroll;        /*BARRA DE ROLAGEM*/
+	font-size: 14px;            /*TAMANHO DA FONTE*/
+	padding-right: 10px;        /*ESPAÇAMENTO SO PARA A DIREITA*/
+	background-color: white;
+	border-radius: 5px;
+	text-align: center;
+opacity: 80%;
+}
+
